@@ -1,0 +1,7 @@
+{
+    "name": "rolling-spider-piloting",
+    "dependencies": {
+        "rolling-spider": "~1.4.1",
+        "temporal": "^0.4.0"
+    }
+}
