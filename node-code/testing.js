@@ -7,7 +7,8 @@ var RollingSpider = require("rolling-spider");
 var temporal = require('temporal');
 var rollingSpider = new RollingSpider();
 
-rollingSpider.connect(function() {
+rollingSpider.connect(function(err) {
+    if (err) throw err;
     rollingSpider.setup(function() {
         rollingSpider.flatTrim();
         rollingSpider.startPing();
